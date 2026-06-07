@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sniglet:wght@400;800&display=swap');
+
+/*GLOBAL*/
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: #f8f8f8;
+}
+
+/*TITLES*/
+.title {
+    font-family: 'Sniglet', sans-serif;
+    color: #295DE2;
+}
+
+.nav-title {
+    font-family: 'Sniglet', sans-serif;
+    color: #295DE2 !important;
+    font-size: 2rem;
+}
+
+/*NAV LINKS*/
+.nav-link-custom {
+    text-decoration: none;
+    color: black;
+    padding: 8px 14px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.nav-link-custom:hover {
+    text-decoration: underline;
+}
+
+.active-link {
+    background-color: #05932B;
+    color: white !important;
+}
+
+/*SECTIONS*/
+.hero {
+    background-color: #D7FFE0;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 6rem;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    color: black;
+}
+
+.about-section {
+    padding: 80px 0;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 3;
+}
+
+.about-text {
+    font-size: 1.4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.9;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #D7FFE0;
+    padding: 20px;
+}
+
+/*PAGE BUTTONS*/
+.page-btn {
+    background-color: #05932B;
+    border-color: #05932B;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover {
+    background-color: #295DE2;
+    border-color: #295DE2;
+    color: white;
+}
+
+/* SERVICES PAGE */
+.services-hero {
+    background-color: #d9f7dd;
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-title {
+    font-size: 5rem;
+}
+
+.services-subtitle {
+    font-size: 2rem;
+    color: black;
+}
+
+.services-section {
+    padding: 70px 0;
+}
+
+.service-category {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card {
+    transition: 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title-small {
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #d9f7dd;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.service-detail-section {
+    padding: 80px 0;
+    min-height: 70vh;
+}
+
+.service-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.service-title {
+    color: #2962ff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.service-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* =======================
+   CONTACT PAGE
+======================= */
+
+.contact-section {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.contact-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #295DE2;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.contact-content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-form-container {
+    flex: 1;
+    background-color: #D7FFE0;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-icon {
+    color: #295DE2;
+    font-size: 1.8rem;
+    margin-top: 5px;
+}
+
+.contact-item h3 {
+    color: #295DE2;
+    margin-bottom: 10px;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #295DE2;
+    box-shadow: 0 0 0 0.2rem rgba(41, 93, 226, 0.25);
+}
+
+.confirmation-box {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.confirmation-box h2 {
+    color: #295DE2;
+    margin-bottom: 20px;
+}
