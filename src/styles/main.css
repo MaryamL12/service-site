@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sniglet:wght@400;800&display=swap');
+
+/* Multiple sections */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    background-color: white;
+    margin: 0;
+}
+
+.section-title {
+    font-family: 'Sniglet', sans-serif;
+    font-size: 4rem;
+    color: #7634CC;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* Profile section */
+.profile-section {
+    background-color: #F5EBE0;
+    min-height: 95vh;
+}
+
+.profile-title {
+    font-family: 'Sniglet', sans-serif;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.profile-title-name {
+    font-family: 'Sniglet', sans-serif;
+    font-size: 7rem;
+    color: #7634CC;
+    line-height: 1;
+}
+
+.profile-subtitle {
+    font-size: 2rem;
+    color: #5B507A;
+}
+
+.profile-image {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #7634CC;
+}
+
+/* About section */
+.about-section {
+    background-color: #F5EBE0;
+}
+
+.about-subtitle {
+    font-size: 2rem;
+    color: #5B507A;
+}
+
+.about-item {
+    font-size: 1.75rem;
+}
+
+.about-icon {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Project section */
+.project-section {
+    background-color: #F5EBE0;
+}
+
+.project-title {
+    font-family: 'Sniglet', sans-serif;
+    font-size: 4rem;
+    color: #7634CC;
+}
+
+.project-image {
+    width: 100%;
+    height: 280px;
+}
+
+.project-subtitle {
+    font-size: 2rem;
+    color: #5B507A;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: black;
+}
+
+.project-button {
+    background-color: #5B507A;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.project-button:hover {
+    background-color: #7634CC;
+    color: white;
+}
+
+/* Experience section */
+.experience-section {
+    background-color: #F5EBE0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.experience-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: black;
+}
+
+.experience-link {
+    background-color: white;
+    color: #5B507A;
+    padding: 18px 24px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.experience-link:hover {
+    background-color: #7634CC;
+    color: white;
+}
