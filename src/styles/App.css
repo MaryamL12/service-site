@@ -1,25 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sniglet:wght@400;800&display=swap');
 
-/*GLOBAL*/
+/*COMMON*/
 body {
     font-family: 'Poppins', sans-serif;
     color: black;
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
-/*TITLES*/
 .title {
     font-family: 'Sniglet', sans-serif;
     color: #295DE2;
+    font-size: 5rem;
 }
 
+.page-hero {
+    background-color: #d9f7dd;
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-subtitle {
+    font-size: 2rem;
+    color: black;
+}
+
+/*BUTTONS (not nav)*/
+.page-btn {
+    background-color: #05932B;
+    border: 1px solid #05932B;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.page-btn:hover, .page-btn:focus, .page-btn:active {
+    background-color: #295DE2 !important;
+    border-color: #295DE2 !important;
+    color: white !important;
+}
+
+.page-btn:visited {
+    color: white;
+}
+
+/*NAV*/
 .nav-title {
     font-family: 'Sniglet', sans-serif;
     color: #295DE2 !important;
     font-size: 2rem;
 }
 
-/*NAV LINKS*/
 .nav-link-custom {
     text-decoration: none;
     color: black;
@@ -37,7 +69,13 @@ body {
     color: white !important;
 }
 
-/*SECTIONS*/
+/*FOOTER*/
+.footer {
+    background-color: #D7FFE0;
+    padding: 20px;
+}
+
+/*HOME*/
 .hero {
     background-color: #D7FFE0;
     min-height: 500px;
@@ -76,45 +114,7 @@ body {
     line-height: 1.9;
 }
 
-/*FOOTER*/
-.footer {
-    background-color: #D7FFE0;
-    padding: 20px;
-}
-
-/*PAGE BUTTONS*/
-.page-btn {
-    background-color: #05932B;
-    border-color: #05932B;
-    color: white;
-    transition: all 0.2s ease;
-}
-
-.page-btn:hover {
-    background-color: #295DE2;
-    border-color: #295DE2;
-    color: white;
-}
-
-/* SERVICES PAGE */
-.services-hero {
-    background-color: #d9f7dd;
-    min-height: 300px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.services-title {
-    font-size: 5rem;
-}
-
-.services-subtitle {
-    font-size: 2rem;
-    color: black;
-}
-
+/*SERVICES*/
 .services-section {
     padding: 70px 0;
 }
@@ -132,10 +132,6 @@ body {
     transition: 0.2s ease;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-}
-
 .card-title-small {
     margin-bottom: 12px;
     font-size: 1.3rem;
@@ -146,12 +142,7 @@ body {
     object-fit: cover;
 }
 
-.footer {
-    background-color: #d9f7dd;
-    padding: 20px;
-    margin-top: 80px;
-}
-
+/*SERVICE DETAILS*/
 .service-detail-section {
     padding: 80px 0;
     min-height: 70vh;
@@ -173,28 +164,16 @@ body {
     line-height: 1.8;
 }
 
-/* =======================
-   CONTACT PAGE
-======================= */
-
+/*CONTACT*/
 .contact-section {
     background-color: white;
     padding: 80px 0;
 }
 
 .contact-title {
-    font-size: 3rem;
-    font-weight: 700;
     color: #295DE2;
     text-align: center;
     margin-bottom: 15px;
-}
-
-.contact-subtitle {
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto 60px;
 }
 
 .contact-content {

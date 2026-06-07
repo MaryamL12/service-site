@@ -9,16 +9,15 @@ import office from '../assets/images/office.jpg'
 import retail from '../assets/images/retail.jpg'
 import building from '../assets/images/building.jpg'
 
-
 function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="services-hero">
+      <section className="page-hero">
         <div className="container text-center">
-          <h1 className="title services-title">Services</h1>
+          <h1 className="title page-title">Services</h1>
 
-          <p className="services-subtitle">
+          <p className="page-subtitle">
             Explore our various painting services and view estimates
           </p>
         </div>
@@ -42,10 +41,10 @@ function Services() {
 
                 <div className="card-body">
                   <p className="card-title-small">
-                    Interior Room
+                    Interior Room Painting
                   </p>
 
-                  <Link to="/interior" className="btn btn-primary btn-sm">
+                  <Link to="/interior" className="btn page-btn btn-sm">
                     View Details
                   </Link>
                 </div>
@@ -62,12 +61,12 @@ function Services() {
 
                 <div className="card-body">
                   <p className="card-title-small">
-                    Whole Home Interior
+                    Whole Home Interior Painting
                   </p>
 
                   <Link
                     to="/whole"
-                    className="btn btn-success btn-sm"
+                    className="btn page-btn btn-sm"
                   >
                     View Details
                   </Link>
@@ -85,12 +84,12 @@ function Services() {
 
                 <div className="card-body">
                   <p className="card-title-small">
-                    Exterior House
+                    Exterior House Painting
                   </p>
 
                   <Link
                     to="/exterior"
-                    className="btn btn-success btn-sm"
+                    className="btn page-btn btn-sm"
                   >
                     View Details
                   </Link>
@@ -100,7 +99,7 @@ function Services() {
           </div>
 
           <h2 className="service-category">
-            Commercial Services
+            Commercial Painting Services
           </h2>
 
           <div className="row g-5">
@@ -119,7 +118,7 @@ function Services() {
 
                   <Link
                     to="/office"
-                    className="btn btn-success btn-sm"
+                    className="btn page-btn btn-sm"
                   >
                     View Details
                   </Link>
@@ -137,12 +136,12 @@ function Services() {
 
                 <div className="card-body">
                   <p className="card-title-small">
-                    Retail Store
+                    Retail Store Painting
                   </p>
 
                   <Link
                     to="/retail"
-                    className="btn btn-success btn-sm"
+                    className="btn page-btn btn-sm"
                   >
                     View Details
                   </Link>
@@ -160,12 +159,12 @@ function Services() {
 
                 <div className="card-body">
                   <p className="card-title-small">
-                    Commercial Building
+                    Commercial Building Painting
                   </p>
 
                   <Link
                     to="/building"
-                    className="btn btn-success btn-sm"
+                    className="btn page-btn btn-sm"
                   >
                     View Details
                   </Link>

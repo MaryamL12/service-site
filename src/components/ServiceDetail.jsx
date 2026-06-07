@@ -34,7 +34,7 @@ function ServiceDetail({
                                     ))}
                                 </ul>
 
-                                <Link to="/contact" className="btn btn-success mt-4">
+                                <Link to="/contact" className="btn page-btn mt-4">
                                     Contact us for a consultation
                                 </Link>
                             </div>
