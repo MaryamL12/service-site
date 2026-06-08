@@ -13,7 +13,7 @@ function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="page-hero">
+      <section className="page-hero py-5">
         <div className="container text-center">
           <h1 className="title page-title">Services</h1>
 
@@ -24,15 +24,15 @@ function Services() {
       </section>
 
       {/* Services */}
-      <section className="services-section">
+      <section className="py-5">
         <div className="container">
-          <h2 className="service-category">
+          <h2 className="service-category text-center mb-5">
             Residential Painting Services
           </h2>
 
           <div className="row g-5 mb-5">
             <div className="col-md-4">
-              <div className="card service-card">
+              <div className="card service-card h-100 shadow-sm">
                 <img
                   src={interior}
                   className="card-img-top"
@@ -52,7 +52,7 @@ function Services() {
             </div>
 
             <div className="col-md-4">
-              <div className="card service-card">
+              <div className="card service-card h-100 shadow-sm">
                 <img
                   src={whole}
                   className="card-img-top"
@@ -75,7 +75,7 @@ function Services() {
             </div>
 
             <div className="col-md-4">
-              <div className="card service-card">
+              <div className="card service-card h-100 shadow-sm">
                 <img
                   src={exterior}
                   className="card-img-top"
@@ -98,13 +98,13 @@ function Services() {
             </div>
           </div>
 
-          <h2 className="service-category">
+          <h2 className="service-category text-center mb-5">
             Commercial Painting Services
           </h2>
 
           <div className="row g-5">
             <div className="col-md-4">
-              <div className="card service-card">
+              <div className="card service-card h-100 shadow-sm">
                 <img
                   src={office}
                   className="card-img-top"
@@ -127,7 +127,7 @@ function Services() {
             </div>
 
             <div className="col-md-4">
-              <div className="card service-card">
+              <div className="card service-card h-100 shadow-sm">
                 <img
                   src={retail}
                   className="card-img-top"
@@ -150,7 +150,7 @@ function Services() {
             </div>
 
             <div className="col-md-4">
-              <div className="card service-card">
+              <div className="card service-card h-100 shadow-sm">
                 <img
                   src={building}
                   className="card-img-top"

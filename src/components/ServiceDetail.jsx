@@ -8,10 +8,10 @@ function ServiceDetail({
 }) {
         return (
             <>
-                <section className="service-detail-section">
+                <section className="py-5">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 mb-4 mb-lg-0">
                                 <img
                                     src={image}
                                     alt={title}
@@ -19,7 +19,7 @@ function ServiceDetail({
                                 />
                             </div>
 
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 mb-4 mb-lg-0">
                                 <h1 className="service-title">{title}</h1>
 
                                 <p className="service-description">{description}</p>
