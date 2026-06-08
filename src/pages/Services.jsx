@@ -64,10 +64,7 @@ function Services() {
                     Whole Home Interior Painting
                   </p>
 
-                  <Link
-                    to="/whole"
-                    className="btn page-btn btn-sm"
-                  >
+                  <Link to="/whole" className="btn page-btn btn-sm">
                     View Details
                   </Link>
                 </div>
@@ -87,10 +84,7 @@ function Services() {
                     Exterior House Painting
                   </p>
 
-                  <Link
-                    to="/exterior"
-                    className="btn page-btn btn-sm"
-                  >
+                  <Link to="/exterior" className="btn page-btn btn-sm">
                     View Details
                   </Link>
                 </div>
@@ -116,10 +110,7 @@ function Services() {
                     Office Painting
                   </p>
 
-                  <Link
-                    to="/office"
-                    className="btn page-btn btn-sm"
-                  >
+                  <Link to="/office" className="btn page-btn btn-sm">
                     View Details
                   </Link>
                 </div>
@@ -139,10 +130,7 @@ function Services() {
                     Retail Store Painting
                   </p>
 
-                  <Link
-                    to="/retail"
-                    className="btn page-btn btn-sm"
-                  >
+                  <Link to="/retail" className="btn page-btn btn-sm">
                     View Details
                   </Link>
                 </div>
@@ -162,10 +150,7 @@ function Services() {
                     Commercial Building Painting
                   </p>
 
-                  <Link
-                    to="/building"
-                    className="btn page-btn btn-sm"
-                  >
+                  <Link to="/building" className="btn page-btn btn-sm">
                     View Details
                   </Link>
                 </div>

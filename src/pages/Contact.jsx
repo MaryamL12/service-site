@@ -3,11 +3,38 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaClock } from 'react-icons/fa';
 
 function Contact() {
     const [submitted, setSubmitted] = useState(false);
+    const [touched, setTouched] = useState(false);
+
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const isFormValid =
+        formData.firstName.trim() &&
+        formData.lastName.trim() &&
+        formData.email.trim() &&
+        formData.message.trim();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setTouched(true);
+
+        if (isFormValid) {
+            setSubmitted(true);
+        }
     };
+
+    const showError = (field) => touched && !formData[field].trim();
 
     return (
         <>
@@ -25,19 +52,13 @@ function Contact() {
             <section className="py-5">
                 <div className="container">
                     <div className="row g-5">
-
-                        {/* LEFT SIDE */}
+                        {/* LEFT */}
                         <div className="col-lg-5 fs-5">
-
                             <div className="d-flex mb-4">
                                 <FaMapMarkerAlt className="contact-icon me-3" />
                                 <div>
                                     <h3>Address</h3>
-                                    <p>
-                                        123 Example Road,<br />
-                                        Ottawa, ON,<br />
-                                        A1B 2C3
-                                    </p>
+                                    <p>123 Example Road,<br />Ottawa, ON,<br />A1B 2C3</p>
                                 </div>
                             </div>
 
@@ -59,38 +80,87 @@ function Contact() {
                                     </p>
                                 </div>
                             </div>
-
                         </div>
 
-                        {/* RIGHT SIDE */}
+                        {/* RIGHT */}
                         <div className="col-lg-7">
-
                             <div className="contact-form-container">
-
                                 {!submitted ? (
                                     <form onSubmit={handleSubmit}>
-
                                         <div className="mb-3">
-                                            <label>First Name <span className="required">*</span></label>
-                                            <input className="form-control" required />
+                                            <label>
+                                                First Name <span className="required">*</span>
+                                            </label>
+                                            <input
+                                                name="firstName"
+                                                className="form-control"
+                                                value={formData.firstName}
+                                                onChange={handleChange}
+                                            />
+                                            {showError("firstName") && (
+                                                <small className="text-danger">
+                                                    First name is required
+                                                </small>
+                                            )}
                                         </div>
 
                                         <div className="mb-3">
-                                            <label>Last Name <span className="required">*</span></label>
-                                            <input className="form-control" required />
+                                            <label>
+                                                Last Name <span className="required">*</span>
+                                            </label>
+                                            <input
+                                                name="lastName"
+                                                className="form-control"
+                                                value={formData.lastName}
+                                                onChange={handleChange}
+                                            />
+                                            {showError("lastName") && (
+                                                <small className="text-danger">
+                                                    Last name is required
+                                                </small>
+                                            )}
                                         </div>
 
                                         <div className="mb-3">
-                                            <label>Email Address <span className="required">*</span></label>
-                                            <input className="form-control" required />
+                                            <label>
+                                                Email <span className="required">*</span>
+                                            </label>
+                                            <input
+                                                name="email"
+                                                type="email"
+                                                className="form-control"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                            />
+                                            {showError("email") && (
+                                                <small className="text-danger">
+                                                    Email is required
+                                                </small>
+                                            )}
                                         </div>
 
                                         <div className="mb-3">
-                                            <label>Message <span className="required">*</span></label>
-                                            <textarea className="form-control" rows="5" required />
+                                            <label>
+                                                Message <span className="required">*</span>
+                                            </label>
+                                            <textarea
+                                                name="message"
+                                                className="form-control"
+                                                rows="5"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                            />
+                                            {showError("message") && (
+                                                <small className="text-danger">
+                                                    Message is required
+                                                </small>
+                                            )}
                                         </div>
 
-                                        <button className="btn page-btn">
+                                        <button
+                                            type="submit"
+                                            className="btn page-btn"
+                                        >
                                             Submit
                                         </button>
 
@@ -101,11 +171,8 @@ function Contact() {
                                         <p>We will get back to you within 2 business days.</p>
                                     </div>
                                 )}
-
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </section>

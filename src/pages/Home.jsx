@@ -7,7 +7,6 @@ function Home() {
         <>
             <section className="hero d-flex align-items-center">
                 <div className="container text-center">
-
                     <h1 className="title hero-title">
                         All-Colours
                     </h1>
@@ -31,13 +30,11 @@ function Home() {
                             Contact
                         </button>
                     </div>
-
                 </div>
             </section>
 
             <section className="py-5 bg-white">
                 <div className="container text-center">
-
                     <h2 className="about-title mb-4">
                         About Us
                     </h2>
@@ -47,7 +44,6 @@ function Home() {
                         We specialize in interior painting, exterior painting, and office painting projects.
                         Explore our available services and book a consultation appointment.
                     </p>
-
                 </div>
             </section>
         </>
